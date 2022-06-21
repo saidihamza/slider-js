@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="utf-8">
+      <title>Caroussel : javaScript - Module 2</title>
+  		<meta name="description" content="Diaporama de photos acccessible au clavier permettant d'avancer, de reculer, de charger une image aléatoirement, de défiler automatiquement ou de choisir parmi les miniatures">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/lib/normalize.css" rel="stylesheet">
+      <link href="css/lib/all.min.css" rel="stylesheet">
+      <link href="css/lib/animate.css" rel="stylesheet">
+      <link href="css/lib/layout-3wa.css" rel="stylesheet">
+      <link href="css/lib/theme-corporate.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&display=swap" rel="stylesheet">
+      <link href="css/slider.css" rel="stylesheet">
+
+    <script src="js/utilities.js"></script>
+  </head>
+  <body>
+    <header class="banner">
+      <a class="banner-link" href="./">
+        <strong class="banner-title">Art de rue</strong>
+        <small>javaScript - Module 2 - Caroussel</small>
+      </a>
+    </header>
+
+    <main class="project container">
+
+      <div class="slider">
+
+        <nav class="project-toolbar">
+          <button id="play-pause" class="btn" title="Démarrer le diaporama"><i class="fa fa-play" aria-hidden="true"></i></button>
+          <button id="random" class="btn" title="Image aléatoire"><i class="fa fa-random" aria-hidden="true"></i></button>
+        </nav>
+
+        <div class="slider-layout">
+          <figure class="slider-figure animated active">
+            <img class="slider-picture" src="img/slides/1.jpg" alt="">
+            <figcaption class="slider-legend">Graffiti par Joenomias</figcaption>
+          </figure>
+          <figure class="slider-figure animated">
+            <img class="slider-picture" src="img/slides/2.jpg" alt="">
+            <figcaption class="slider-legend">Rue urbaine par Wimkantona</figcaption>
+          </figure>
+          <figure class="slider-figure animated">
+            <img class="slider-picture" src="img/slides/3.jpg" alt="">
+            <figcaption class="slider-legend">Velo Vintage par _cristina</figcaption>
+          </figure>
+          <figure class="slider-figure animated">
+            <img class="slider-picture" src="img/slides/4.jpg" alt="">
+            <figcaption class="slider-legend">Escalier par Pasja1000</figcaption>
+          </figure>
+          <figure class="slider-figure animated">
+            <img class="slider-picture" src="img/slides/5.jpg" alt="">
+            <figcaption class="slider-legend">Penang Asia par Onyva</figcaption>
+          </figure>
+          <figure class="slider-figure animated">
+            <img class="slider-picture" src="img/slides/6.jpg" alt="">
+            <figcaption class="slider-legend">Artiste de rue par Wobbut</figcaption>
+          </figure>
+          <nav class="slider-navigation">
+            <a href="#"
+              rel="prev"
+              id="prev"
+              class="prev"
+              title="Image précédente">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </a>
+            <a href="#"
+              rel="next"
+              id="next"
+              class="next"
+              title="Image suivante">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </main>
+
+    <footer id="mentions" class="mentions">
+      <a href="http://3wa.fr/" title="Site de la 3WA"><img src="img/3wa.png" alt="3W Academy" width="50"></a>
+			<p><strong> &copy; 3W Academy - Formation Développeur WEB - Tous&nbsp;droits&nbsp;réservés</strong><br>
+			Cet exercice est mis à disposition des stagiaires dans le cadre exclusif de leur apprentissage</p>
+      <p>Nous remercions les auteurs de ces photos récoltées sur <a href="https://pixabay.com/" target="_blank">Pixabay</a></p>
+      <a class="goTop" href="#" aria-label="Remonter">↑</a>
+		</footer>
+
+    <!-- Affichage du support 3wa -->
+    <script src=".3wa/js/resources.js" data-md="resources/resources.md"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
